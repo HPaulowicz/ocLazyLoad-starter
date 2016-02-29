@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ocLazyLoad Starter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- JS -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>
+    <script type="text/javascript" src="assets/lib/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="assets/lib/ocLazyLoad.min.js"></script>
+	<script type="text/javascript" src="app/app.config.js"></script>
+</head>
+<body ng-app="lazyload">
+	<div class="page">
+		<div class="bar">
+			<a href="/#/">HOME</a>
+			<a href="/#/data/">PAGE</a>
+		</div>
+		<div class="primary" ui-view="primary_view"></div>
+		<div class="content" ui-view="content_view"></div>
+	</div>
+</body>
+</html>
